@@ -1,4 +1,9 @@
 # LIVE-YT-BMP
 We will use the raw BMP image format for use in other projects.  
   
-*DO DATE : Saterday May 20th, 2023*  
+YOUTUBE VIDEO
+https://www.youtube.com/watch?v=_xA4lRWzsGA 
+
+
+BMP Format
+https://en.wikipedia.org/wiki/BMP_file_format
