@@ -1,5 +1,7 @@
 
-/*
+/*!
+@author ThatOSDev
+@NOTE
 #define BMP_IMPLEMENTATION
 #include "bmp.h"
 */
@@ -7,8 +9,33 @@
 #ifndef BMP_H
 #define BMP_H
 
+/*! @breif
+    This allows you to load a BMP file. It can be 24 or 32 Bits.
+	@param[in] This is the path and name of the file to load.
+	@param[out] The Width of the image. This is pulled from the image header.
+	@param[out] The Height of the image. This is pulled from the image header.
+	@param[out] The Bit Depth of the image. This is pulled from the image header.
+	@return This will return the data of the image.
+*/
 unsigned char* LoadBMP(const char* fileName, int* width, int* height, unsigned short* bd);
+
+/*! @breif
+    This allows you to generate a BMP file. It can be 24 or 32 Bits.
+	@param[in] The user specifies the Width of the image.
+	@param[in] The user specifies the Height of the image.
+	@param[in] The user specifies the Bit Depth of the image.
+	@return This will return the data of the image.
+*/
 unsigned char* GenerateBMP(int width, int height, int bits);
+
+/*! @breif
+    This allows you to save a BMP file. It can be 24 or 32 Bits.
+	@param[in] This is the path and name of the file to save.
+	@param[in] The is the data you want saved with the image.
+	@param[in] The user specifies the Width of the image.
+	@param[in] The user specifies the Height of the image.
+	@param[in] The user specifies the Bit Depth of the image.
+*/
 void SaveBMP(const char* fileName, unsigned char* data, int width, int height, unsigned short bitDepth);
 
 #endif // BMP_H
